@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+body{
+  padding: 20px 20%;
+  overflow-x: hidden;
+  background-image: url("../img/pat.avif");
+  background-repeat: repeat;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+
+@media (min-width: 425px) {
+
+  body{
+    padding: 20px 5%;
+    /* background-color: grey; */
+  }
+     
+}
+
+@media (min-width: 768px) {
+
+  body{
+    padding: 20px 5%;
+    /* background-color: red; */
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  body{
+    padding: 20px 10%;
+    /* background-color: yellow; */
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0.3;
+  }
+}
+
+.erroMessage {
+  color: red;
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 5px 0; 
+}
+
+@keyframes moverDesdeAbajo {
+  0% {
+    opacity: 0;
+    transform: translateX(600%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOutRow {
+  animation: fadeOut 0.3s ease-in-out; /* Puedes ajustar la duración y el temporizador según tus necesidades */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInRow {
+  animation: fadeIn 0.3s ease-in-out; /* Puedes ajustar la duración y el temporizador según tus necesidades */
+}
+
+.hidden{
+  display: none;
+}
+
+td > i:hover{
+  color:#225fb9;
+  cursor:pointer;
+}
+
+.d-blue{
+  color: darkblue;
+}
+
+.bd-example {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -0.75rem 0;
+  border: solid #dee2e6;
+  border-width: 1px;  
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.toast-body{
+  background-color: white;
+  /* opacity: 1 !important; */
+}
+
+.highlightRow{
+  background-color: #cbf1ff;
+}
+
+.flex__container{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.b-border{
+  border-bottom: 0.1rem solid #001caf;
+}
+
+.title{
+  font-size: 1.8rem;
+  color:#001caf;
+}
+
+.bg-color-aux{
+  background-color: #f2eee2;
+}
